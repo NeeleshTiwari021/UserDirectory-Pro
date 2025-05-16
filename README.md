@@ -1,70 +1,109 @@
-# Getting Started with Create React App
+**Overview**
+A responsive web application that fetches and displays random user data from the Random User Generator API. The application features:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+User listing with pagination
 
-## Available Scripts
+Search functionality
 
-In the project directory, you can run:
+Error handling and loading states
 
-### `npm start`
+Clean, professional UI with responsive design
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**Features**
+**User Management:**
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Fetch and display 50 random users
 
-### `npm test`
+View detailed user information
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Search users by name or email
 
-### `npm run build`
+**State Management:**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+MobX for centralized state management
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Observable state properties
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Actions for state modifications
 
-### `npm run eject`
+**UI Components:**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Responsive card layout
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Pagination controls
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Search functionality
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Loading indicators
 
-## Learn More
+Error messages with retry option
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Technical Features:**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Axios for API requests
 
-### Code Splitting
+CSS Modules for component styling
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+React Icons for professional UI elements
 
-### Analyzing the Bundle Size
+Modern React hooks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+**Project Structure**
 
-### Making a Progressive Web App
+src/
+├── components/          # Reusable UI components
+│   ├── ErrorMessage/    # Error display component
+│   ├── Header/          # Application header
+│   ├── LoadingSpinner/  # Loading indicator
+│   ├── Pagination/      # Pagination controls
+│   ├── SearchBox/       # Search input component
+│   ├── UserCard/        # Individual user card
+│   └── UserList/        # User list container
+├── pages/               # Page components
+│   └── HomePage/        # Main application page
+├── stores/              # MobX stores
+│   └── userStore.js     # User data store
+├── styles/              # Global styles
+│   ├── global.css       # Global CSS rules
+│   └── variables.css    # CSS variables
+├── utils/               # Utility functions
+│   └── api.js           # API service
+├── App.jsx              # Main application component
+└── index.js             # Application entry point
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Technologies Used**
+**Frontend:**
 
-### Advanced Configuration
+React 18 (Functional Components)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+MobX (State Management)
 
-### Deployment
+Axios (HTTP Client)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+React Icons (Icon Library)
 
-### `npm run build` fails to minify
+**Styling:**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+CSS Modules (Component-scoped styles)
+
+Responsive Design (Mobile-first approach)
+
+**Build Tool:**
+
+Create React App (Project scaffolding)
+
+Installation
+Clone the repository:
+
+bash
+git clone https://github.com/NeeleshTiwari021/UserDirectory-Pro.git
+cd UserDirectory-Pro
+Install dependencies:
+
+bash
+npm install
+Start the development server:
+
+bash
+npm start
+Open http://localhost:3000 in your browser.
